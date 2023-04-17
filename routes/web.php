@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('webdatarocks');
 });
 
+Route::get('/pivottablejs', function () {
+    return view('pivottablejs');
+});
+
 Route::get('/data', \App\Http\Controllers\PivotTableDataController::class . '@getDataAsJson');
